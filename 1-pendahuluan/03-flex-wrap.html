@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* flex-wrap: nowrap; | default */
+		.container,
+		.container2,
+		.container3 {
+			width: 600px;
+			border: 5px solid black;
+			margin: 30px auto;
+			padding: 5px;
+			box-sizing: border-box;
+			display: flex;
+		}
+
+		/* flex-wrap: wrap; */
+		.container2 { flex-wrap: wrap; }
+
+		/* flex-wrap: wrap-reverse; */
+		.container3 { flex-wrap: wrap-reverse; }
+
+		.container div,
+		.container2 div,
+		.container3 div {
+			width: 120px;
+			height: 120px;
+			background-color: #2063D1;
+			margin: 2px;
+		}
+	</style>
+	<title>Flex Wrap</title>
+</head>
+<body>
+
+	<h2>Flex Wrap: memindahkan items yang sudah tidak muat di container ke baris di bawahnya</h2>
+
+	<h4>normalnya flexbox akan memaksa semua items muat dalam container, sehingga ukurannya akan berubah</h4>
+	<h4>.container{flex-wrap: nowrap;} | default</h4>
+	<div class="container">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+		<div class="empat">4</div>
+		<div class="lima">5</div>
+		<div class="enam">6</div>
+	</div>
+
+	<h4>.container{flex-wrap: wrap;}</h4>
+	<div class="container2">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+		<div class="empat">4</div>
+		<div class="lima">5</div>
+		<div class="enam">6</div>
+	</div>
+
+	<h4>.container{flex-wrap: wrap-reverse;}</h4>
+	<div class="container3">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+		<div class="empat">4</div>
+		<div class="lima">5</div>
+		<div class="enam">6</div>
+	</div>
+
+</body>
+</html>

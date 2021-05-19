@@ -1,0 +1,192 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: calibri;
+	background-color: #ddd;
+	padding-bottom: 1000px;
+}
+
+/* latihan 1 */
+.sidebar-kiri ul li a {
+	text-decoration: none;
+	color: darkblue;
+}
+
+.container-satu {
+	background-color: white;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.kolom-utama,
+.sidebar-kiri,
+.sidebar-kanan {
+	padding: 0 10px;
+	background-color: #ddd;
+	border-radius: 5px;
+	margin: 0 5px;
+	box-shadow: -2px 2px 5px 0 rgba(0,0,0,.3);
+}
+
+.kolom-utama {
+	order: 2;
+	flex: 3;
+}
+
+.sidebar-kiri {
+	order: 1;
+	flex: 0.5;
+}
+
+.sidebar-kanan {
+	order: 3;
+	flex: 1;
+}
+
+.container-satu .kolom-utama h1 {
+	margin-top: 15px;
+}
+/* akhir latihan 1 */
+
+/* latihan 2 */
+.container-dua {
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+.layanan-satu,
+.layanan-dua,
+.layanan-tiga {
+	background-color: #87B5E0;
+	border-radius: 5px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0 10px;
+	box-shadow: -2px 2px 5px 0 rgba(0,0,0,.3);
+}
+/* akhir latihan 2 */
+
+/* latihan 3 */
+.container-tiga {
+	background-color: white;
+}
+
+.thumbnail {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.foto {
+	width: 100%;
+	padding: 0 2px;
+	box-sizing: border-box;
+}
+
+.container-tiga img {
+	width: 100%;
+}
+/* akhir latihan 3 */
+
+/* latihan 4 */
+.container-empat {
+	max-width: 800px;
+	margin: 30px auto;
+}
+
+.card {
+	border-radius: 5px;
+	box-shadow: -2px 2px 5px 0 rgba(0,0,0,.3);
+	overflow: hidden;
+	color: white;
+	margin: 15px;
+}
+
+.card1 {
+	background-color: #FF3636;
+}
+
+.card2 {
+	background-color: #FF8B36;
+}
+
+.card3 {
+	background-color: #FFDC36;
+}
+
+.card .header {
+	height: 150px;
+	background-color: #777;
+}
+
+.card .content {
+	text-align: center;
+	padding-bottom: 20px;
+}
+/* akhir latihan 4 */
+
+/* latihan 5 */
+.container-lima {
+	background-color: white;
+	padding: 20px 0;
+}
+
+.kotak {
+	width: 500px;
+	height: 500px;
+	border: 3px solid black;
+	margin: 0 auto;
+	display: flex;
+}
+
+.kotak-kecil {
+	width: 100px;
+	height: 100px;
+	background-color: #A0A0A0;
+	color: white;
+	box-shadow: -2px 2px 5px 0 rgba(0,0,0,.3);
+	border-radius: 5px;
+	text-align: center;
+	margin: auto;
+	display: flex;
+}
+
+.kotak-kecil span {
+	margin: auto;
+}
+/* akhir latihan 5 */
+
+/*
+MEDIA QUERY untuk responsive
+-ketika ukuran layar diatas 800px, jalankan semua css
+-ketika ukuran layar dibawah 800px, yg di dalam @media jangan jalankan
+*/
+@media (min-width: 800px){
+	.container-dua {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.layanan-satu,
+	.layanan-dua,
+	.layanan-tiga {
+		width: 30%;
+	}
+
+	.foto {
+		width: 25%;
+	}
+
+	.container-empat {
+		display: flex;
+	}
+
+	.card1 {
+		transform: scale(1.2);
+	}
+}
